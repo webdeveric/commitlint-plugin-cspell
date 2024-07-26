@@ -1,0 +1,11 @@
+.vscode/
+cache/
+coverage/
+dist/
+node_modules/
+private/
+.editorconfig
+.npmrc
+.nvmrc
+.prettierignore
+pnpm-lock.yaml

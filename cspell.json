@@ -1,0 +1,13 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "words": ["CODEOWNERS", "nvmrc", "postbuild", "tsbuildinfo", "typecheck", "vitest", "webdeveric"],
+  "flagWords": [],
+  "ignorePaths": ["pnpm-lock.yaml", "node_modules", ".vscode"],
+  "languageSettings": [
+    {
+      "languageId": "commit-msg",
+      "ignoreRegExpList": ["/^#.*/gm"]
+    }
+  ]
+}
