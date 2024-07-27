@@ -1,9 +1,12 @@
 import { describe, expect, it } from 'vitest';
 
-import { demo } from '../src/index.js';
+import plugin from '../src/index.js';
+import { properties } from '../src/types.js';
 
-describe('demo()', () => {
-  it('Does a thing', () => {
-    expect(demo()).toBeTruthy();
+describe('default export', () => {
+  it('Is a Plugin with cspell rules', () => {
+    expect(Object.keys(plugin.rules)).toEqual(
+      expect.arrayContaining(properties.map((property) => expect.stringMatching(`cspell/${property}`))),
+    );
   });
 });
