@@ -1,5 +1,8 @@
 import type { Plugin } from '@commitlint/types';
-import type { RemoveIndex } from '@webdeveric/utils/types/records';
+
+export type RemoveIndex<T> = {
+  [K in keyof T as symbol extends K ? never : string extends K ? never : number extends K ? never : K]: T[K];
+};
 
 export type CommitLintRule = Plugin['rules'][string];
 
