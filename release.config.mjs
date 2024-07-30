@@ -1,5 +1,5 @@
 /**
- * @type {import('semantic-release').GlobalConfig}
+ * @type {Partial<import('semantic-release').GlobalConfig>}
  */
 export default {
   branches: ['main'],

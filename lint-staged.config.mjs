@@ -1,5 +1,5 @@
 /**
- * @type {Record<string, string | (filenames: string[]) => string | string[] | Promise<string | string[]>}
+ * @type {Record<string, string | string[] | ((files: string[]) => string | string[] | Promise<string | string[]>)>}
  */
 export default {
   '*.{js,cjs,mjs,ts,cts,mts}': ['eslint --fix', 'prettier --write'],
