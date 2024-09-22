@@ -17,7 +17,7 @@
     "url": "https://github.com/webdeveric/commitlint-plugin-cspell/issues"
   },
   "license": "MIT",
-  "packageManager": "pnpm@9.6.0+sha256.dae0f7e822c56b20979bb5965e3b73b8bdabb6b8b8ef121da6d857508599ca35",
+  "packageManager": "pnpm@9.11.0+sha512.0a203ffaed5a3f63242cd064c8fb5892366c103e328079318f78062f24ea8c9d50bc6a47aa3567cabefd824d170e78fa2745ed1f16b132e16436146b7688f19b",
   "sideEffects": false,
   "type": "module",
   "main": "./dist/index.js",
@@ -49,27 +49,27 @@
   },
   "prettier": "@webdeveric/prettier-config",
   "dependencies": {
-    "@commitlint/types": "^19.0.3",
-    "cspell-lib": "^8.14.2"
+    "@commitlint/types": "^19.5.0",
+    "cspell-lib": "^8.14.4"
   },
   "devDependencies": {
-    "@types/node": "^22.5.4",
-    "@vitest/coverage-v8": "^2.0.5",
+    "@types/node": "^22.5.5",
+    "@vitest/coverage-v8": "^2.1.1",
     "@webdeveric/eslint-config-ts": "^0.11.0",
     "@webdeveric/prettier-config": "^0.3.0",
-    "cspell": "^8.14.2",
-    "eslint": "^8.57.0",
+    "cspell": "^8.14.4",
+    "eslint": "^8.57.1",
     "eslint-config-prettier": "^9.1.0",
     "eslint-import-resolver-typescript": "^3.6.3",
     "eslint-plugin-import": "^2.30.0",
-    "husky": "^9.1.5",
+    "husky": "^9.1.6",
     "lint-staged": "^15.2.10",
     "prettier": "^3.3.3",
     "rimraf": "^6.0.1",
-    "semantic-release": "^24.1.0",
-    "typescript": "^5.5.4",
+    "semantic-release": "^24.1.1",
+    "typescript": "^5.6.2",
     "validate-package-exports": "^0.6.1",
-    "vitest": "^2.0.5"
+    "vitest": "^2.1.1"
   },
   "peerDependencies": {
     "@commitlint/lint": ">=7.6.0"
