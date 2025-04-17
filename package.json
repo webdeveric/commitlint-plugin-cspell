@@ -50,26 +50,26 @@
   "prettier": "@webdeveric/prettier-config",
   "dependencies": {
     "@commitlint/types": "^19.8.0",
-    "cspell-lib": "^8.18.1"
+    "cspell-lib": "^8.19.0"
   },
   "devDependencies": {
-    "@types/node": "^22.13.14",
-    "@vitest/coverage-v8": "^3.0.9",
+    "@types/node": "^22.14.1",
+    "@vitest/coverage-v8": "^3.1.1",
     "@webdeveric/eslint-config-ts": "^0.11.0",
     "@webdeveric/prettier-config": "^0.3.0",
-    "cspell": "^8.18.1",
+    "cspell": "^8.19.0",
     "eslint": "^8.57.1",
-    "eslint-config-prettier": "^10.1.1",
+    "eslint-config-prettier": "^10.1.2",
     "eslint-import-resolver-typescript": "^3.10.0",
     "eslint-plugin-import": "^2.31.0",
     "husky": "^9.1.7",
-    "lint-staged": "^15.5.0",
+    "lint-staged": "^15.5.1",
     "prettier": "^3.5.3",
     "rimraf": "^6.0.1",
     "semantic-release": "^24.2.3",
-    "typescript": "^5.8.2",
+    "typescript": "^5.8.3",
     "validate-package-exports": "^0.9.0",
-    "vitest": "^3.0.9"
+    "vitest": "^3.1.1"
   },
   "peerDependencies": {
     "@commitlint/lint": ">=7.6.0"
