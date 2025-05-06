@@ -5,6 +5,7 @@
     "CODEOWNERS",
     "commitlint",
     "commitlintplugin",
+    "conventionalcommits",
     "nvmrc",
     "OIDC",
     "postbuild",
