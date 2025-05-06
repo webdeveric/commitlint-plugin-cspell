@@ -10,6 +10,7 @@
     "postbuild",
     "tsbuildinfo",
     "typecheck",
+    "unrs-resolver",
     "vitest",
     "webdeveric"
   ],
