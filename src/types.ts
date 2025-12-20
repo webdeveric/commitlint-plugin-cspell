@@ -1,4 +1,4 @@
-import type { Plugin } from '@commitlint/types';
+import type { AnyRuleConfig, Plugin, RuleConfigQuality } from '@commitlint/types';
 
 export type RemoveIndex<T> = {
   [K in keyof T as symbol extends K ? never : string extends K ? never : number extends K ? never : K]: T[K];
@@ -16,4 +16,8 @@ export const properties = ['body', 'footer', 'header', 'scope', 'subject', 'type
 
 export type CommitProperty = (typeof properties)[number];
 
-export type PluginRuleEntry = [ruleName: `cspell/${CommitProperty}`, ruleFn: CommitLintRule];
+export type CspellRuleName = `cspell/${CommitProperty}`;
+
+export type PluginRulesConfig = Record<CspellRuleName, AnyRuleConfig<RuleConfigQuality.User>>;
+
+export type PluginRuleEntry = [ruleName: CspellRuleName, ruleFn: CommitLintRule];
