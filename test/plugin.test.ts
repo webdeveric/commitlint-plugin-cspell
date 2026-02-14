@@ -19,7 +19,7 @@ describe('Plugin works with commitlint', () => {
   } satisfies Partial<PluginRulesConfig>;
 
   const getRules = (...keys: (keyof PluginRulesConfig)[]): Partial<QualifiedRules> =>
-    Object.fromEntries(keys.map((key) => [key, rules[key]]));
+    Object.fromEntries(keys.map((key) => [key, Reflect.get(rules, key)]));
 
   it.each([
     ['cspell/type', 'speling: Bad type'],
