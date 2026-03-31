@@ -11,7 +11,7 @@
   "author": "Eric King <eric@webdeveric.com> (https://webdeveric.com/)",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/webdeveric/commitlint-plugin-cspell.git"
+    "url": "git+https://github.com/webdeveric/commitlint-plugin-cspell.git"
   },
   "bugs": {
     "url": "https://github.com/webdeveric/commitlint-plugin-cspell/issues"
