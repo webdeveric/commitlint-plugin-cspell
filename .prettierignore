@@ -6,6 +6,6 @@ node_modules/
 private/
 .editorconfig
 .npmrc
-.nvmrc
+.node-version
 .prettierignore
 pnpm-lock.yaml
