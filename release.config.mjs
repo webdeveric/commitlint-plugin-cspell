@@ -46,6 +46,7 @@ export default {
       '@semantic-release/github',
       {
         addReleases: 'bottom',
+        labels: ['release'],
       },
     ],
   ],
