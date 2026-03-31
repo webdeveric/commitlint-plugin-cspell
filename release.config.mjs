@@ -42,6 +42,11 @@ export default {
         provenance: true,
       },
     ],
-    '@semantic-release/github',
+    [
+      '@semantic-release/github',
+      {
+        addReleases: 'bottom',
+      },
+    ],
   ],
 };
