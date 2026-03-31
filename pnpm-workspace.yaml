@@ -1,3 +1,7 @@
+autoInstallPeers: true
+
+enablePrePostScripts: true
+
+engineStrict: true
+
 minimumReleaseAge: 2880 # 2 days
-minimumReleaseAgeExclude:
-  - validate-package-exports@0.18.0
