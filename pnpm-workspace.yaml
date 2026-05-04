@@ -1,3 +1,6 @@
+allowBuilds:
+  unrs-resolver: true
+
 autoInstallPeers: true
 
 enablePrePostScripts: true
