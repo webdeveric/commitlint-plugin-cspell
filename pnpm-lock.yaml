@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@commitlint/types':
-        specifier: ^20.5.0
-        version: 20.5.0
+        specifier: ^21.0.0
+        version: 21.0.0
       cspell-lib:
         specifier: ^10.0.0
         version: 10.0.0
@@ -143,10 +143,6 @@ packages:
   '@commitlint/to-lines@21.0.0':
     resolution: {integrity: sha512-qMwvrJK/x3dPcXsIAtQAMKV5Q0wTioyqyHKR06vVN4wmBF4cCrrLq5x81FDeY3Ba+GWgDt0/P3Zw/IHGM8lwgg==}
     engines: {node: '>=22.12.0'}
-
-  '@commitlint/types@20.5.0':
-    resolution: {integrity: sha512-ZJoS8oSq2CAZEpc/YI9SulLrdiIyXeHb/OGqGrkUP6Q7YV+0ouNAa7GjqRdXeQPncHQIDz/jbCTlHScvYvO/gA==}
-    engines: {node: '>=v18'}
 
   '@commitlint/types@21.0.0':
     resolution: {integrity: sha512-6nEz+M7I90iix4sviA8NLwskOuyt0M98KUU2aYgiKbn46jMSxUm1l2ACtzRd9ec+y38aKyJhW4Fp6NW0z35kJQ==}
@@ -3649,11 +3645,6 @@ snapshots:
       '@commitlint/types': 21.0.0
 
   '@commitlint/to-lines@21.0.0': {}
-
-  '@commitlint/types@20.5.0':
-    dependencies:
-      conventional-commits-parser: 6.4.0
-      picocolors: 1.1.1
 
   '@commitlint/types@21.0.0':
     dependencies:
