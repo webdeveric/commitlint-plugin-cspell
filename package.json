@@ -49,8 +49,8 @@
   },
   "prettier": "@webdeveric/prettier-config",
   "dependencies": {
-    "@commitlint/types": "^21.0.0",
-    "cspell-lib": "^10.0.0"
+    "@commitlint/types": "^21.0.1",
+    "cspell-lib": "^10.0.1"
   },
   "devDependencies": {
     "@commitlint/lint": "^21.0.2",
