@@ -9,7 +9,13 @@ engineStrict: true
 
 minimumReleaseAge: 2880 # 2 days
 
+minimumReleaseAgeExclude:
+  - validate-package-exports@1.4.5
+
 minimumReleaseAgeExcludePrune: true
 
 overrides:
   brace-expansion@>=3.0.0 <5.0.7: ^5.0.7
+
+update:
+  githubActions: true
