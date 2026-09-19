@@ -9,34 +9,44 @@ concurrency:
 env:
   HUSKY: 0
 
-permissions:
-  contents: read # for checkout
-
 jobs:
   ci:
     name: Continuous Integration
+    permissions:
+      contents: read # for checkout
+    strategy:
+      fail-fast: true
+      matrix:
+        node: [22, 24, 26]
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@0ebf47130e4866e96fce0953f49152a61190b271 # v6.0.9
-
-      - name: Use Node.js
-        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+      - name: Setup
+        uses: pnpm/setup@703c52620218391530e48b9e8870d5c0082e1b9b # v2.1.0
         with:
-          node-version-file: '.node-version'
-          cache: 'pnpm'
+          cache: true
+          install: false # Audit before installing dependencies
+          runtime: node@${{ matrix.node }}
+
+      - name: Audit dependencies
+        run: pnpm audit --audit-level=moderate --prod
 
       - name: Installing dependencies
-        run: pnpm install
+        run: pnpm install --frozen-lockfile
+
+      - name: Verify registry signatures for installed packages
+        run: pnpm audit signatures
 
       - name: Linting
         run: pnpm lint
 
       - name: Type checking
         run: pnpm typecheck
+
+      - name: Spell check
+        run: pnpm spellcheck
 
       - name: Testing
         run: pnpm coverage
