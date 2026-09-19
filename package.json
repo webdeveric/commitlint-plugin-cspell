@@ -17,7 +17,6 @@
     "url": "https://github.com/webdeveric/commitlint-plugin-cspell/issues"
   },
   "license": "MIT",
-  "packageManager": "pnpm@11.17.0+sha512.cca3cea332ad254bb84145f966d19f4879615210346fc92c79a047f23a0d7b3cca3c3792f0076ba1f1831d277efbcf0a9119b31a9a60eca7fb3d6231f331ef72",
   "sideEffects": false,
   "type": "module",
   "main": "./dist/index.js",
@@ -32,6 +31,20 @@
   "files": [
     "dist"
   ],
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": ">=12.0.0 <13.0.0",
+      "onFail": "warn"
+    },
+    "runtime": [
+      {
+        "name": "node",
+        "version": "^26.9.0",
+        "onFail": "download"
+      }
+    ]
+  },
   "scripts": {
     "clean": "rimraf ./dist/",
     "prebuild": "pnpm clean",
